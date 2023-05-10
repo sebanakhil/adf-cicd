@@ -1,0 +1,20 @@
+{
+	"name": "ex1MetadataDrivenCopyTask_fhe_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "controldb",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ex1MetadataDrivenCopyTask_fhe_20230505"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "controldb",
+			"table": "MainControlTable"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

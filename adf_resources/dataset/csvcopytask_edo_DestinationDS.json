@@ -1,0 +1,27 @@
+{
+	"name": "csvcopytask_edo_DestinationDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sqdb_destination",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"cw_table": {
+				"type": "String"
+			}
+		},
+		"folder": {
+			"name": "csvcopytask_edo_20230508"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"table": {
+				"value": "@dataset().cw_table",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

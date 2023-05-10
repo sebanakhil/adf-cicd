@@ -1,0 +1,9 @@
+{
+	"name": "adf-metapipe",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5d130f99-9edf-4c48-8c6f-edad84fb1f39",
+		"tenantId": "b8de7641-2de4-4459-9614-d29fbf092578"
+	}
+}
