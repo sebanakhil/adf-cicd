@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-metapipe"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"adf_sql_metadat_connectionString": {
+			"value": ""
+		},
+		"controldb_connectionString": {
+			"value": ""
+		},
+		"sqdb_destination_connectionString": {
+			"value": ""
+		},
+		"sqldb_metadat_connectionString": {
+			"value": ""
+		},
+		"sqldb_source_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adls1metapipe.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
