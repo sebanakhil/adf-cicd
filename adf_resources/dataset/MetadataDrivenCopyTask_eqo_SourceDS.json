@@ -1,0 +1,64 @@
+{
+	"name": "MetadataDrivenCopyTask_eqo_SourceDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureFileStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"cw_columnDelimiter": {
+				"type": "String"
+			},
+			"cw_escapeChar": {
+				"type": "String"
+			},
+			"cw_quoteChar": {
+				"type": "String"
+			},
+			"cw_firstRowAsHeader": {
+				"type": "Bool"
+			},
+			"cw_fileName": {
+				"type": "Object"
+			},
+			"cw_folderPath": {
+				"type": "Object"
+			}
+		},
+		"folder": {
+			"name": "MetadataDrivenCopyTask_eqo_20230515"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureFileStorageLocation",
+				"fileName": {
+					"value": "@dataset().cw_fileName",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().cw_folderPath",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": {
+				"value": "@dataset().cw_columnDelimiter",
+				"type": "Expression"
+			},
+			"escapeChar": {
+				"value": "@dataset().cw_escapeChar",
+				"type": "Expression"
+			},
+			"firstRowAsHeader": {
+				"value": "@dataset().cw_firstRowAsHeader",
+				"type": "Expression"
+			},
+			"quoteChar": {
+				"value": "@dataset().cw_quoteChar",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}
