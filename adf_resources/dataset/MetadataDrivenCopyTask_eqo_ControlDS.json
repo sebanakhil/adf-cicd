@@ -1,0 +1,19 @@
+{
+	"name": "MetadataDrivenCopyTask_eqo_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "controldb",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MetadataDrivenCopyTask_eqo_20230515"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MainControlTable_eqo"
+		}
+	}
+}
